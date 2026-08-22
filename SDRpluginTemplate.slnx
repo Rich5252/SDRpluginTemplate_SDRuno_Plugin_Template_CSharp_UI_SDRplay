@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MyPluginProject/MyPluginProject.vcxproj">
+    <BuildDependency Project="MyPluginUiGlue/MyPluginUiGlue.vcxproj" />
+  </Project>
+  <Project Path="MyPluginUi/MyPluginUi.csproj" />
+  <Project Path="MyPluginUiGlue/MyPluginUiGlue.vcxproj">
+    <BuildDependency Project="MyPluginUi/MyPluginUi.csproj" />
+  </Project>
+</Solution>
